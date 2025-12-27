@@ -1,0 +1,374 @@
+nav {
+    background-color:  rgb(49, 4, 4);
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    z-index: 1;
+}
+#co img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+li a {
+    padding: 14px 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    color: aliceblue;
+}
+
+li {
+    list-style: none;
+    float: right;
+}
+
+#co {
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li a:hover {
+    background-color: orange;
+    border-radius: 20px;
+}
+
+body {
+    background-color: rgb(62, 10, 10);
+}
+
+#pa {
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+
+h1 {
+    font-style: oblique;
+    color: orange;
+}
+
+h2 {
+    align-items: center;
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+}
+
+button {
+    color: aliceblue;
+    border-radius: 20px;
+    margin: 16px 14px;
+    background-color: transparent;
+    font-size: x-large;
+}
+
+button:hover {
+    color: rgba(113, 76, 8, 0.721);
+    background-color: orange;
+
+}
+#cu a{
+text-decoration: none;
+color: aliceblue;
+}
+
+img {
+    height: 300px;
+    width: 500px;
+
+
+}
+
+#all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.as h1{
+    color: black;
+    margin-bottom: 2px;
+}
+.ph hr{
+    width: 60px;
+    border: 2px solid rgb(255, 119, 0);
+    position: relative;
+    right: 149px;
+    border-radius: 5px;
+}
+.as p{
+    color: black;
+}
+.fi{
+ 
+background-color: aliceblue;
+height: 700px;
+margin-bottom: 0px;
+margin-top: 150px;
+
+}
+.ph{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding-top: 50px;
+}
+.ph img{
+    height: 300px;
+    width: 300px;
+    border-radius:50%;
+    float: left;
+    margin-top: 100px;
+
+}.as{
+    float: right;
+    
+}
+
+.phot hr{
+    width: 60px;
+    border: 2px solid rgb(255, 119, 0);
+    position: relative;
+    right: 10px;
+    border-radius: 5px;
+    margin-bottom: 20PX;
+}
+.phot{
+    background-color: rgb(30, 28, 28);
+    padding-top: 10px;
+}
+.phot .ro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);/*the 3 is to align the images in 3 rows 
+    use grid template for it to look a table form*/
+    gap: 20px;
+    margin-left: 30px;
+
+
+}
+.phot img{
+    height: 300px;
+    width: 300px;
+    border-radius:50%;
+
+}
+.phot img:hover{
+    transform: scale(1.1);
+}
+#name{
+    color: white;
+}
+#na{
+    color:black;
+}
+.tex{
+    color:black;
+}
+#Testimonial{
+    color: black;
+    margin-left: 550px;
+}
+#MENU{
+    margin-left: 560px;
+    color: black;
+}
+
+#note {
+    /*display: flex;  when using display flex no need of grid template to align in one row
+    grid-template-columns: repeat(3, 1fr);*/
+    overflow: hidden;
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin-left: 150px;
+
+}
+.slide{
+    display: flex;
+    width: 1500px;
+    transition: transform 0.5s ease-in-out;
+}
+.par{
+    padding-top: 150px;
+    position: relative;
+    margin-left: 100px;
+}
+.par img{
+    object-fit: cover;
+    height: 180px;
+    width: 180px;
+}
+input[type="radio"] {
+    display: none;
+}
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    margin-left: 40px;
+}
+.navigation label{
+    display: inline-block;
+    background: gray;
+    margin: 0 5px;
+    border-radius: 30%;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 0.5rem;
+}
+#slider1:checked ~ .slide {
+    transform: translateX(-200px);
+}
+#slider3:checked ~ .slide {
+    transform: translateX(-400px);
+}
+#slider5:checked ~ .slide {
+    transform: translateX(-600px);
+}
+#slider7:checked ~ .slide {
+    transform: translateX(-900px);
+}
+.tes{
+   background-color: white;
+   height:700px;
+  padding-top: 50px;
+   }
+  .tes hr{
+    width: 60px;
+    border: 2px solid rgb(255, 119, 0);
+    position: relative;
+    right: 9px;
+    border-radius: 5px;
+    margin-bottom: 20PX;
+  }
+.user{
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+}
+
+.ga img{
+height: 250px;
+width: 350px;
+gap: 500px;
+padding: 10px 20px;
+transition:0.3s;
+}
+.gal hr{
+    width: 100px;
+    border: 2px solid rgb(255, 119, 0);
+    position: relative;
+    right: 0px;
+    border-radius: 5px;
+    margin-bottom: 20PX;
+}
+#Gallery{
+margin-left: 580px;
+    color: black;
+}
+.gal{
+    background-color: white;
+        padding-top: 10px;
+        
+}
+.ga img:hover{
+transform: scale(1.1);
+}
+.fo{
+   height: 500px;
+    background-color:white;
+}
+
+#contact{
+    color: black;
+    margin-left: 560px;
+}
+.fo hr{
+    width: 100px;
+    border: 2px solid rgb(255, 119, 0);
+    position: relative;
+    right: 0px;
+    border-radius: 5px;
+    margin-bottom: 20PX;
+}
+table{
+margin-left: 100px;
+
+}
+.in{
+    padding-left: 300px;
+}
+input{
+    height: 23px;
+    width: 300px;
+    margin-bottom: 10px;
+
+}
+#su{
+    border-radius: 50px;
+    background-color: rgb(64, 4, 4);
+    font-size: x-large;
+}
+
+#su:hover{
+    background-color: transparent;
+}
+#demo{
+    color: black;
+    margin-left: 580px;
+}
+.fo {
+    padding-top: 10px;
+}
+.fo img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+footer{
+    background-color: black;
+    color: aliceblue;
+}
+#im img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    
+}
+
+
+#li a{
+    color: white;
+    text-decoration: none;
+  
+}
+#li{
+    padding-left:750px;
+}
+#li a:hover{
+color: orange;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

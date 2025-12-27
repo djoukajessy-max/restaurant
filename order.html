@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+   /* const address = document.getElementById('adress').value;
+    const number = document.getElementById('number').value;
+    const password = document.getElementById('password').value;
+    const name = document.getElementById('name').value;
+    const form = document.getElementById('all');
+    const error = document.getElementById('error');
+    const qauntity = document.getElementById('qauntity').value;
+    const select = document.getElementById('select').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const service = document.getElementById('service').value;
+    const method = document.getElementById('method').value;
+let isValid = true;
+    
+    function submit() {
+    { popup.style.display ="none";
+            
+        }
+    }
+   const today = new Date().toISOString().split('T')[0];
+   document.getElementById("date").setAttribute("min", today);
+   popup.style.display ="flex"; 
+
+   function saveData() {
+       localStorage.setItem("name", document.getElementById("name").value);
+       localStorage.setItem("adress", document.getElementById("adress").value);
+       localStorage.setItem("password", document.getElementById("password").value);
+       localStorage.setItem("number", document.getElementById("number").value);
+       localStorage.setItem("qauntity", document.getElementById("qauntity").value);
+       localStorage.setItem("date", document.getElementById("date").value);
+       localStorage.setItem("time", document.getElementById("time").value);
+       localStorage.setItem("select", document.getElementById("select").value);
+       localStorage.setItem("service", document.getElementById("service").value);
+       localStorage.setItem("method", document.getElementById("method").value);
+   }*/
+</script>
+
+<body background="aa.jpg">
+    <h1>ORDER FORM </h1>
+    <form id="all" autocomplete="on">
+
+        <div id="info" onsubmit="saveData()" action="index">
+
+            <input type="text" name="na" id="name" placeholder="enter your full name" required><br><br>
+            <input type="text" name="adress" id="adress" placeholder="enter your adress" required><br><br>
+            <input type="text" name="adress" id="number" placeholder="enter your id number" required><br><br>
+            <input type="password" name="pw" id="password" placeholder="enter your password" autocomplete="off" required><br><br>
+            <select>
+                <option id="select">select your meal</option>
+                <option id="select">1fried chicken</option>
+                <option id="select">1/2fried chicken</option>
+                <option id="select">1/4fried chicken</option>
+                <option id="select">eru </option>
+                <option id="select">ndole plantain</option>
+            </select><br><br>
+            <input type="number" name="qaun" id="qauntity" min="1" placeholder="qauntity" required><br><br>
+            <label>Date:</label> <br><br>
+            <input type="date" id="date" name="date" min="" required><br><br>
+            <label>time:</label><br><br>
+            <input type="time" id="time" min="9:00" max="12:00" name="time"><br><br>
+            <label>service:</label><br><br>
+            <input type="radio" name="se" id="service" required>Delivery
+            <input type="radio" name="se" id="service" required>Pickup service
+            <input type="radio" name="se" id="service" required>reservation
+            <br><br>
+
+            <li>All reservations should be made minimum <b>24hrs</b> before.</li>
+            <li>All payment are done<b>personally confirm by a signature.</b></li>
+            <li>all order <b>not respected</b> shall call<b> juridic function. </b></li>
+        </div>
+
+        <div id="menu">
+
+             <H2>PAYMENT METHOD</H2>
+            <P>Select your payment method</P>
+
+            <input type="radio" name="PM" required id="method">MTN<BR><BR>
+            <input type="radio" name="PM" required id="method">ORANGE<BR><BR>
+            <input type="radio" name="PM" required id="method">CREDIT CARD<BR><BR>
+
+            <button type="submit">Submit</button>
+            <div id="error"></div>
+        </div>
+    </form>
+
+
+
+    <fieldset id="index">
+        <div id="lo"><img src="lo/ba.jpg">
+          <h><b>COFFEE</b></h>
+        </div>
+        <div id="new">
+          Full_Name:<span id="name">kkkkkk</span><br><br>
+          Address:<span id="Address">kk</span><br><br>
+          Id_Number:<span id="number">kkkk</span><br><br>
+          meal:<span id="meal">nnnww</span><br><br>
+          Date:<span id="date">ww</span><br><br>
+          Time:<span id="time">aaaaaaaa</span><br><br>
+          Qauntity:<span id="qauntity">aaaaaaa</span><br><br>
+          service:<span id="service">eeeeeeeee</span><br><br>
+          payement method:<span id="method">rrrrrr</span><br><br>
+        </div>
+      </fieldset>
+
+
+<style>
+
+#lo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+ 
+  fieldset{
+  margin-left: 350px;
+    border-color: black;
+    width:500px;
+    height:450px ;
+  background-image: url(aa.jpg);
+  }
+  #new{
+    margin-top: 50px;
+margin-left: 30px;
+font-weight: bolder;
+  }
+  span{
+    font-weight: normal;
+  }
+  h{
+    font-size: xx-large;
+  }
+
+
+
+        #error {
+            color: #f12;
+            font-size: 20px;
+            font-weight: 100px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        button {
+            color: black;
+            background-color: chocolate;
+            border-radius: 10px;
+            font-size: 25px;
+            width: 220px;
+            text-align: center;
+
+        }
+
+        #info {
+            padding-left: 80px;
+
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 10px;
+            font-family: 'roboto', 'helvatica neue', Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #menu {
+            padding-right: 40px;
+        }
+
+        #all {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="password"] {
+
+            width: 300px;
+            height: 16px;
+            margin-left: 30px;
+        }
+
+        li {
+            margin-left: 30px;
+        }
+
+        input[type="number"] {
+            width: 50px;
+            height: 14px;
+            margin-left: 30px;
+
+        }
+
+        input[type="date"],
+        input[type="time"],
+        input[type="radio"] {
+            margin-left: 30px;
+        }
+
+        label {
+            margin-left: 30px;
+        }
+
+        select {
+            width: 150px;
+            height: 20px;
+            margin-left: 30px;
+        }
+    </style>
+    
+    
+
+
+
+</body>
+
+</html>
